@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 26, 2020 at 08:28 AM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.6
+-- Generation Time: Aug 27, 2020 at 09:21 AM
+-- Server version: 10.4.6-MariaDB
+-- PHP Version: 7.1.32
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -169,18 +170,10 @@ CREATE TABLE `wo_albums_media` (
 --
 
 INSERT INTO `wo_albums_media` (`id`, `post_id`, `parent_id`, `image`) VALUES
-(1, 11, 0, 'upload/photos/2020/08/KNTfEfPwOPjHKTBcqaxW_11_155aef69d48bf15e6a038b4726c716c1_image.jpg'),
-(2, 12, 11, 'upload/photos/2020/08/KNTfEfPwOPjHKTBcqaxW_11_155aef69d48bf15e6a038b4726c716c1_image.jpg'),
-(11, 63, 0, 'upload/sounds/2020/08/QFwonXxHqUG7rbBWEgs6_21_aca15441adc86cb659698b2a8f804a66_soundFile.mp3'),
-(12, 64, 63, 'upload/sounds/2020/08/QFwonXxHqUG7rbBWEgs6_21_aca15441adc86cb659698b2a8f804a66_soundFile.mp3'),
-(15, 63, 0, 'upload/sounds/2020/08/jCWZnAY7kchw2yLiTUXb_25_701147eaa39737002f70c02bb736b4c7_soundFile.mp3'),
-(16, 67, 63, 'upload/sounds/2020/08/jCWZnAY7kchw2yLiTUXb_25_701147eaa39737002f70c02bb736b4c7_soundFile.mp3'),
-(19, 63, 0, 'upload/sounds/2020/08/jWdmTuzBCDsUdF31wVBP_25_00b9c1af7f69f3d22486a2f183bde197_soundFile.mp3'),
-(20, 69, 63, 'upload/sounds/2020/08/jWdmTuzBCDsUdF31wVBP_25_00b9c1af7f69f3d22486a2f183bde197_soundFile.mp3'),
-(21, 60, 0, 'upload/sounds/2020/08/7ZFpc8X3bp4dkK9jwNVT_26_43a3f460ef9134ebaf19b47df671984d_soundFile.mp3'),
-(22, 70, 60, 'upload/sounds/2020/08/7ZFpc8X3bp4dkK9jwNVT_26_43a3f460ef9134ebaf19b47df671984d_soundFile.mp3'),
-(23, 60, 0, 'upload/sounds/2020/08/TnMhiVGauYo7qSF2Hxnh_26_e53a3236f296c3e09da8bcd04b46500f_soundFile.mp3'),
-(24, 71, 60, 'upload/sounds/2020/08/TnMhiVGauYo7qSF2Hxnh_26_e53a3236f296c3e09da8bcd04b46500f_soundFile.mp3');
+(29, 88, 0, 'upload/sounds/2020/08/ks1rzHjKetBTuwwYhfge_26_8aef3f213ceaa58c3f689e5cb5cc96e2_soundFile.mp3'),
+(30, 89, 88, 'upload/sounds/2020/08/ks1rzHjKetBTuwwYhfge_26_8aef3f213ceaa58c3f689e5cb5cc96e2_soundFile.mp3'),
+(31, 88, 0, 'upload/sounds/2020/08/mDowiQKWLaGsdTOPCWep_26_e2e48ab29ce3268d1ec14bacba9ea19f_soundFile.mp3'),
+(32, 90, 88, 'upload/sounds/2020/08/mDowiQKWLaGsdTOPCWep_26_e2e48ab29ce3268d1ec14bacba9ea19f_soundFile.mp3');
 
 -- --------------------------------------------------------
 
@@ -250,7 +243,12 @@ INSERT INTO `wo_appssessions` (`id`, `user_id`, `session_id`, `platform`, `platf
 (4, 2, '982e61b1be3220221c8e529d29208902f576b2b9dfbbe239484101efd476e8aadd7c8d3e29909253ba0a4d6ecea3e9e126dd3b6d77291c97', 'web', '{\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36\",\"name\":\"Google Chrome\",\"version\":\"83.0.4103.106\",\"platform\":\"windows\",\"pattern\":\"#(?<browser>Version|Chrome|other)[/ ]+(?<version>[0-9.|a-zA-Z.]*)#\",\"ip_address\":\"::1\"}', 1593165733),
 (12, 1, '2facdbf14863836b2a2b5fc0a3f19cf988896bd505200899c7efafa8310a4496dbdde57763863237c96e651946818e0787d6296f69549fe1', 'web', '{\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36 Edg/84.0.522.52\",\"name\":\"Google Chrome\",\"version\":\"84.0.4147.105\",\"platform\":\"windows\",\"pattern\":\"#(?<browser>Version|Chrome|other)[/ ]+(?<version>[0-9.|a-zA-Z.]*)#\",\"ip_address\":\"::1\"}', 1596803524),
 (27, 1, '849410b895cf3c8e7194fdc6f1b23523a6a731cf3314e8a02e8548e8b7d0d58f83106af437494595f26bdcba3e7ea29ba3b9f8bc2555fefa', 'web', '{\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36\",\"name\":\"Google Chrome\",\"version\":\"84.0.4147.105\",\"platform\":\"windows\",\"pattern\":\"#(?<browser>Version|Chrome|other)[/ ]+(?<version>[0-9.|a-zA-Z.]*)#\",\"ip_address\":\"::1\"}', 1598423305),
-(28, 4, '581aad301947068af270155dc1ac92366b86722fb1f803fd34af433a1fd8ca4173dd643070098067db079083386e2e0885f278fbd1d8a476', 'web', '{\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36 Edg/84.0.522.52\",\"name\":\"Google Chrome\",\"version\":\"84.0.4147.105\",\"platform\":\"windows\",\"pattern\":\"#(?<browser>Version|Chrome|other)[/ ]+(?<version>[0-9.|a-zA-Z.]*)#\",\"ip_address\":\"::1\"}', 1597236583);
+(28, 4, '581aad301947068af270155dc1ac92366b86722fb1f803fd34af433a1fd8ca4173dd643070098067db079083386e2e0885f278fbd1d8a476', 'web', '{\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36 Edg/84.0.522.52\",\"name\":\"Google Chrome\",\"version\":\"84.0.4147.105\",\"platform\":\"windows\",\"pattern\":\"#(?<browser>Version|Chrome|other)[/ ]+(?<version>[0-9.|a-zA-Z.]*)#\",\"ip_address\":\"::1\"}', 1597236583),
+(29, 1, 'a41ba50e3809e03c8b6590d76a0664c93871e06221251aa637ba5f12f3716d98730c0973375437827e448ed9dd44e6e22442dac8e21856ae', 'web', '{\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36\",\"name\":\"Google Chrome\",\"version\":\"84.0.4147.135\",\"platform\":\"windows\",\"pattern\":\"#(?<browser>Version|Chrome|other)[/ ]+(?<version>[0-9.|a-zA-Z.]*)#\",\"ip_address\":\"::1\"}', 1598426798),
+(30, 1, 'a6de5a0661864ccb6f551a00b9113cba3acecb7a6fc81cf6695dbaf7bed132318a294d6e317867574bb236de7787ceedafdff83bb8ea4710', 'web', '{\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36\",\"name\":\"Google Chrome\",\"version\":\"84.0.4147.135\",\"platform\":\"windows\",\"pattern\":\"#(?<browser>Version|Chrome|other)[/ ]+(?<version>[0-9.|a-zA-Z.]*)#\",\"ip_address\":\"::1\"}', 1598427809),
+(31, 1, 'c3ecc77e94f6aa6b8901b5b88be4ec9d03e3a230b1cf8a90bf10c30711d6f58ea98e18e387849597b93e78c67fd4ae3ee626d8ec0c412dec', 'web', '{\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36\",\"name\":\"Google Chrome\",\"version\":\"84.0.4147.135\",\"platform\":\"windows\",\"pattern\":\"#(?<browser>Version|Chrome|other)[/ ]+(?<version>[0-9.|a-zA-Z.]*)#\",\"ip_address\":\"::1\"}', 1598438504),
+(35, 1, '9fea9d7b06e3a055122e94595a6db9fd3dd26150318e3e4c792db37b26383cc6b46df3a990463179586ee5cb5f17541372cdd7d54b6414d7', 'web', '{\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36\",\"name\":\"Google Chrome\",\"version\":\"84.0.4147.135\",\"platform\":\"windows\",\"pattern\":\"#(?<browser>Version|Chrome|other)[/ ]+(?<version>[0-9.|a-zA-Z.]*)#\",\"ip_address\":\"::1\"}', 1598507076),
+(38, 1, 'a83ce10fd92d08a3858150697ea2a6bb19112c9e39537989920de262cd897c23b692404d69869555cb757ef40153ca7301d5333de1be4e06', 'web', '{\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36\",\"name\":\"Google Chrome\",\"version\":\"84.0.4147.135\",\"platform\":\"windows\",\"pattern\":\"#(?<browser>Version|Chrome|other)[/ ]+(?<version>[0-9.|a-zA-Z.]*)#\",\"ip_address\":\"::1\"}', 1598511203);
 
 -- --------------------------------------------------------
 
@@ -611,7 +609,7 @@ INSERT INTO `wo_config` (`id`, `name`, `value`) VALUES
 (2, 'siteTitle', 'wowonder'),
 (3, 'siteKeywords', 'social, wowonder, social site'),
 (4, 'siteDesc', 'WoWonder v3.0.2 is a Social Networking Platform. With our new feature, user can wonder posts, photos,'),
-(5, 'siteEmail', 'b4irshad@gmail.com'),
+(5, 'siteEmail', ''),
 (6, 'defualtLang', 'english'),
 (7, 'emailValidation', '0'),
 (8, 'emailNotification', '0'),
@@ -723,8 +721,8 @@ INSERT INTO `wo_config` (`id`, `name`, `value`) VALUES
 (115, 'lifetime_boosts', '40'),
 (116, 'chat_outgoing_background', '#fff9f9'),
 (117, 'windows_app_version', '1.0'),
-(118, 'widnows_app_api_id', 'f28262fe1f6f830820b93a416fe8a264'),
-(119, 'widnows_app_api_key', 'cdbcae1d642c0c4c0be831e3bd7c1d97'),
+(118, 'widnows_app_api_id', 'de30d9766f47a5bed72ab52c9979b379'),
+(119, 'widnows_app_api_key', '131abb6b6ed6f531d94b3ef81dae3285'),
 (120, 'stripe_id', ''),
 (121, 'stripe_secret', ''),
 (122, 'credit_card', 'no'),
@@ -832,7 +830,7 @@ INSERT INTO `wo_config` (`id`, `name`, `value`) VALUES
 (224, 'login_auth', '0'),
 (225, 'two_factor', '0'),
 (226, 'two_factor_type', 'email'),
-(227, 'last_notification_delete_run', '1598420766'),
+(227, 'last_notification_delete_run', '1598507168'),
 (228, 'ios_push_messages', '0'),
 (229, 'ios_m_push_id', ''),
 (230, 'ios_m_push_key', ''),
@@ -1315,7 +1313,7 @@ CREATE TABLE `wo_groupchatusers` (
 
 INSERT INTO `wo_groupchatusers` (`id`, `user_id`, `group_id`, `active`, `last_seen`) VALUES
 (5, 5, 2, '1', '1596785853'),
-(6, 1, 2, '1', '1597222237'),
+(6, 1, 2, '1', '1598510057'),
 (7, 4, 2, '1', '1597222167');
 
 -- --------------------------------------------------------
@@ -3480,9 +3478,7 @@ INSERT INTO `wo_messages` (`id`, `from_id`, `group_id`, `page_id`, `to_id`, `tex
 (4, 3, 0, 0, 4, 'hi', '', '', '', 1596779824, 1596779832, '0', '0', 0, '', '', '', 0, '0', '0'),
 (5, 4, 0, 0, 3, 'hello', '', '', '', 1596779840, 1596779841, '0', '0', 0, '', '', '', 0, '0', '0'),
 (6, 4, 0, 0, 3, 'a', 'upload/sounds/2020/08/Cul7J4UlWEEv5zgdN8ek_07_4dc1633572e16b87beadb4458a22c578_soundFile.wav', 'AU-2020-08-07T05-59-18-470Z.wav', '', 1596779958, 1596779962, '0', '0', 0, '', '', '', 0, '0', '0'),
-(7, 5, 0, 0, 4, 'hi', '', '', '', 1596780809, 1596780819, '0', '0', 0, '', '', '', 0, '0', '0'),
-(8, 4, 2, 0, 0, 'hi', '', '', '', 1596781151, 0, '0', '0', 0, '', '', NULL, 0, '0', '0'),
-(9, 5, 2, 0, 0, 'by', '', '', '', 1596781281, 0, '0', '0', 0, '', '', NULL, 0, '0', '0');
+(7, 5, 0, 0, 4, 'hi', '', '', '', 1596780809, 1596780819, '0', '0', 0, '', '', '', 0, '0', '0');
 
 -- --------------------------------------------------------
 
@@ -3899,29 +3895,30 @@ CREATE TABLE `wo_posts` (
 --
 
 INSERT INTO `wo_posts` (`id`, `post_id`, `user_id`, `recipient_id`, `postText`, `page_id`, `group_id`, `event_id`, `page_event_id`, `postLink`, `postLinkTitle`, `postLinkImage`, `postLinkContent`, `postVimeo`, `postDailymotion`, `postFacebook`, `postFile`, `postFileName`, `postFileThumb`, `postYoutube`, `postVine`, `postSoundCloud`, `postPlaytube`, `postDeepsound`, `postMap`, `postShare`, `postPrivacy`, `postType`, `postFeeling`, `postListening`, `postTraveling`, `postWatching`, `postPlaying`, `postPhoto`, `time`, `registered`, `album_name`, `multi_image`, `multi_image_post`, `boosted`, `product_id`, `poll_id`, `blog_id`, `forum_id`, `thread_id`, `videoViews`, `postRecord`, `postSticker`, `shared_from`, `post_url`, `parent_id`, `cache`, `comments_status`, `blur`, `color_id`, `job_id`, `offer_id`, `fund_raise_id`, `fund_id`, `active`, `stream_name`, `live_time`, `live_ended`, `agora_resource_id`, `agora_sid`, `postDescription`, `postTags`, `dark_wave`, `light_wave`) VALUES
-(3, 3, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/photos/2020/07/GXLSFORsfVbeoG3FnSWn_20_363d67fde94b33b8356466de3c462b65_image.jpg', 'waseem_ibrar.jpg', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1595240434, '7/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', ''),
-(4, 4, 4, 0, 'Nothing...', 0, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1596778719, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', ''),
-(5, 5, 4, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/gv9Wu831YZAtCglQMaBr_07_048aeca1c673a820a912ec9913e3e06a_soundFile.mp3', '05_-_Abhi_Mujh_Mein_Kahin(wapking.fm).mp3', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1596785831, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', ''),
-(6, 6, 4, 0, '[a]http%3A%2F%2Flocalhost%2Fwowonder[/a]', 0, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1596793536, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', ''),
-(7, 7, 4, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/rs4bMpRVc9nyJNgh6wvT_07_f6f2cb5a8726bb5d75c6e691d3172870_soundFile.mp3', '02 - Bolna [Songspk.LINK].mp3', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1596795206, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', ''),
-(8, 8, 4, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/rs4bMpRVc9nyJNgh6wvT_07_f6f2cb5a8726bb5d75c6e691d3172870_soundFile.mp3', '02 - Bolna [Songspk.LINK].mp3', '', '', '', '', '', '', '', 0, '0', '', '', '', '', '', '', '', 1596803847, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', '', 0, 'http://localhost/wowonder/post/7', 7, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, '', '', NULL, NULL, '', ''),
-(9, 9, 4, 0, NULL, 0, 0, 0, 0, '', NULL, '', '', '', '', '', 'upload/photos/2020/08/knIvJos4LfMTKBJkcAef_10_c7bf7cddca2e88d30e54f9c03c504ce6_avatar_full.jpg', '', '', '', '', '', '', '', '', 0, '0', 'profile_picture', '', '', '', '', '', '', 1597036126, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 1597231706, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', ''),
-(10, 10, 1, 0, NULL, 0, 0, 0, 1, '', NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1597062672, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', ''),
-(11, 11, 4, 0, NULL, 0, 0, 0, 0, '', NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1597138586, '8/2020', 'photooo', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', ''),
-(12, 12, 4, 0, NULL, 0, 0, 0, 0, '', NULL, '', '', '', '', '', 'upload/photos/2020/08/KNTfEfPwOPjHKTBcqaxW_11_155aef69d48bf15e6a038b4726c716c1_image.jpg', 'IMG_4036.JPG', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1597138586, '8/2020', '', '0', 1, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', ''),
-(13, 13, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/B39uxp9SnTQwKgNYA52T_12_ffa9ba0632b1e7838594d416c510b860_soundFile.mp3', '[Songs.PK] 02 - Zid - Tu Zaroori.mp3', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1597232710, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', ''),
-(14, 14, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/videos/2020/08/23MApcwtJqYyE1ssMs3X_12_e77d82bcb74b2e2ead2a710582b17430_video.mp4', '1. Introduction.mp4', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1597232779, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 2, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', ''),
-(20, 20, 1, 0, 'hi, welcome', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/videos/2020/08/CSwI9lfwZzmzufIQlaEB_17_fe5f7578d7955120b0fe141d957998e0_video.mp4', '1. Introduction.mp4', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1597649797, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', ''),
-(43, 43, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/videos/2020/08/OpaOCkj1tqBOnJK2Yg5Y_18_b6e4d975ad82458a95eb9f8e96b59df7_video.mp4', 'Intro.mp4', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1597748858, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', '', '', '', ''),
-(44, 44, 1, 0, 'new songs', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/D75JLzeSwcqVVmtiUmr7_18_2845fadd791bd7ca52297dfe578c0601_soundFile.mp3', 'music.mp3', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1597749155, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', 'song', 'song', '', ''),
-(45, 45, 1, 0, 'welcome', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/videos/2020/08/adhXtLIhaO8t4t1ZjBRi_19_a86c86b80976e208a0a270386d9683fb_video.mp4', 'introd.mp4', 'upload/photos/2020/08/hw6uwpNWRoFzSJPWI7ln_19_a86c86b80976e208a0a270386d9683fb_image.jpg', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1597816394, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 1, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', 'education', 'int', '', ''),
-(60, 60, 1, 0, NULL, 0, 0, 0, 0, '', NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598001646, '8/2020', 'latest song', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', ''),
-(63, 63, 1, 0, NULL, 0, 0, 0, 0, '', NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598004390, '8/2020', 'songssss', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', ''),
-(64, 64, 1, 0, NULL, 0, 0, 0, 0, '', NULL, '', '', '', '', '', 'upload/sounds/2020/08/QFwonXxHqUG7rbBWEgs6_21_aca15441adc86cb659698b2a8f804a66_soundFile.mp3', '04 Sau Tarah Ke (Revisited).mp3', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598004390, '8/2020', '', '0', 1, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', ''),
-(65, 65, 1, 0, 'new upload', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/photos/2020/08/VSOVLcPN4kQAFZpPkpPY_24_40a09b314d779ac9ce47fe1144c09eeb_image.jpg', 'my pic.jpg', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598255267, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', 'nice pic', 'sadf', '', ''),
-(69, 69, 1, 0, NULL, 0, 0, 0, 0, '', NULL, '', '', '', '', '', 'upload/sounds/2020/08/jWdmTuzBCDsUdF31wVBP_25_00b9c1af7f69f3d22486a2f183bde197_soundFile.mp3', '[Songs.PK] 03 - Roy - Chittiyaan Kalaiyaan.mp3', '', '', '', '', '', '', '', 0, '1', 'post', '', '', '', '', '', '', 0, '8/2020', '', '0', 1, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', ''),
-(70, 70, 1, 0, NULL, 0, 0, 0, 0, '', NULL, '', '', '', '', '', 'upload/sounds/2020/08/7ZFpc8X3bp4dkK9jwNVT_26_43a3f460ef9134ebaf19b47df671984d_soundFile.mp3', '04 Sau Tarah Ke (Revisited).mp3', '', '', '', '', '', '', '', 0, '1', 'post', '', '', '', '', '', '', 0, '8/2020', '', '0', 1, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', ''),
-(71, 71, 1, 0, NULL, 0, 0, 0, 0, '', NULL, '', '', '', '', '', 'upload/sounds/2020/08/TnMhiVGauYo7qSF2Hxnh_26_e53a3236f296c3e09da8bcd04b46500f_soundFile.mp3', '[Songs.PK] 02 - Zid - Tu Zaroori.mp3', '', '', '', '', '', '', '', 0, '1', 'post', '', '', '', '', '', '', 0, '8/2020', '', '0', 1, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', '');
+(85, 85, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/photos/2020/08/kMIQdA656Ch77MvuEfgY_26_f070f3aca1a263c0790acd35d5570d14_image.jpeg', 'WhatsApp Image 2020-08-18 at 6.30.37 PM.jpeg', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598437686, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', '', '', '', ''),
+(86, 86, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/CKRVABKh5SDDRgP8swTF_26_cdfb46696b441aa2c46c032e6f4f36c5_soundFile.mp3', 'sound.mp3', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598438415, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', '', '', '', ''),
+(87, 87, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/MqwHisGdEWFrDxBdYhvj_26_28f54408d156565138c9c1d428a27608_soundFile.mp3', 'sound 1.mp3', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598439459, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', '', '', '', ''),
+(88, 88, 1, 0, NULL, 0, 0, 0, 0, '', NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598440281, '8/2020', 'Songs', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', ''),
+(89, 89, 1, 0, NULL, 0, 0, 0, 0, '', NULL, '', '', '', '', '', 'upload/sounds/2020/08/ks1rzHjKetBTuwwYhfge_26_8aef3f213ceaa58c3f689e5cb5cc96e2_soundFile.mp3', 'sound 1.mp3', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598440281, '8/2020', '', '0', 1, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', ''),
+(90, 90, 1, 0, NULL, 0, 0, 0, 0, '', NULL, '', '', '', '', '', 'upload/sounds/2020/08/mDowiQKWLaGsdTOPCWep_26_e2e48ab29ce3268d1ec14bacba9ea19f_soundFile.mp3', 'sound.mp3', '', '', '', '', '', '', '', 0, '1', 'post', '', '', '', '', '', '', 0, '8/2020', '', '0', 1, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', NULL, NULL, '', ''),
+(91, 91, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/3jnHLx7wtQbS9mYQ9mwJ_27_bb86088eb6103b41a0399e6a548d8917_soundFile.mp3', 'sound 1.mp3', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598505357, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', '', '', '', ''),
+(92, 92, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/hMHT7MLgBuBvtWdKu4Jh_27_8255964ba05129e65f8a023ce78942e7_soundFile.mp3', 'sound.mp3', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598505501, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', '', '', '', ''),
+(93, 93, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/Y4XxK6bTXNWqjo9eC65f_27_8a333413b778b952f3bd8bc7c0f0a99a_soundFile.mp3', 'sound.mp3', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598505513, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', '', '', '', ''),
+(94, 94, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/photos/2020/08/owYlAavzLxmen1o6hEsn_27_3f73635cf0e2b493137308409682b827_image.png', 'Screenshot (2).png', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598505545, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', '', '', '', ''),
+(95, 95, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0, '0', 'post', 'happy', '', '', '', '', '', 1598505574, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', '', '', '', ''),
+(96, 96, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/1K5V2DSBYcaZgHxhXT1c_27_e9c9c117957864d38532bf224a6e0ae6_soundFile.mp3', 'sound.mp3', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598505584, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', '', '', '', ''),
+(97, 97, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/DlCVfVZ2OfPtAZ24OwBp_27_d6413e1a120f427593757315ac858cd4_soundFile.mp3', 'sound.mp3', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598505692, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', '', '', '', ''),
+(98, 98, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/w94hczg4xH1appkEpIxR_27_dc9f793413ef327e7af2c9ea1e87cada_soundFile.mp3', 'sound 1.mp3', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598506016, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', 'Desc', '', '', ''),
+(99, 99, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/GbIOgk86lfJirOs1dYLw_27_378b0c6e0e071827e888dc3ea74731b0_soundFile.mp3', 'sound.mp3', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598506644, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', 'asd', 'asd', '', ''),
+(100, 100, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/kcbatrPzK3GOKcCHRar5_27_d3ed43b22c2d9758af0df35f3600d7f1_soundFile.mp3', 'sound.mp3', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598507165, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', '', '', '', ''),
+(101, 101, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/f85RYzy6eAWIeMpZ6LE9_27_756fd4a7a5a70f8ea80d1e395fb0a4f9_soundFile.mp3', 'sound.mp3', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598507469, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', '', '', '', ''),
+(102, 102, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/UXrHtykrOQBowF52xkmm_27_47014cba895f5da91da3fb587fd72f82_soundFile.mp3', 'sound 1.mp3', '', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598507487, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', '', '', '', ''),
+(103, 103, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/photos/2020/08/8PNFPzeVVXzAgklGHNEx_27_88dbc7ad7d60cec028fab76597db0c1a_image.jpg', 'download.jpg', 'upload/photos/2020/08/8PNFPzeVVXzAgklGHNEx_27_88dbc7ad7d60cec028fab76597db0c1a_image.jpg', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598508262, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', '', '', '', ''),
+(104, 104, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/kcbatrPzK3GOKcCHRar5_27_d3ed43b22c2d9758af0df35f3600d7f1_soundFile.mp3', 'sound.mp3', 'upload/photos/2020/08/3pCvutAXsq97DY2wgkpA_27_abebcc9d19875b5f405400088f70d0d7_image.jpg', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598508291, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', 'sad', 'sadsad', '', ''),
+(105, 105, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/5E2Bm5it4lOIlcmdKvsz_27_6b71084c9983d74f5776b7ef813e91ca_soundFile.mp3', 'sound 1.mp3', 'upload/photos/2020/08/sD4gkNFiRx1UXMP5gLGC_27_6b71084c9983d74f5776b7ef813e91ca_image.jpg', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598508598, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', '', '', '', ''),
+(106, 106, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/lKffrQJzAyqjTUomZ5zV_27_958d7439149fb45fbbf83ea7a872c879_soundFile.mp3', 'sound 1.mp3', 'upload/photos/2020/08/DHfR13jgnnZerTPx2Q9r_27_958d7439149fb45fbbf83ea7a872c879_image.jpg', '', '', '', '', '', '', 0, '0', 'post', '', '', '', '', '', '', 1598508890, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', NULL, 0, NULL, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, NULL, '', 'Descriptioon', 'tags', '', ''),
+(107, 107, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/UXrHtykrOQBowF52xkmm_27_47014cba895f5da91da3fb587fd72f82_soundFile.mp3', 'sound 1.mp3', '', '', '', '', '', '', '', 0, '0', '', '', '', '', '', '', '', 1598509856, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', '', 0, 'http://localhost/wowonder//post/102', 102, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, '', '', '', '', '', ''),
+(108, 108, 1, 0, '', 0, 0, 0, 0, '', '', '', '', '', '', '', 'upload/sounds/2020/08/5E2Bm5it4lOIlcmdKvsz_27_6b71084c9983d74f5776b7ef813e91ca_soundFile.mp3', 'sound 1.mp3', 'upload/photos/2020/08/sD4gkNFiRx1UXMP5gLGC_27_6b71084c9983d74f5776b7ef813e91ca_image.jpg', '', '', '', '', '', '', 0, '0', '', '', '', '', '', '', '', 1598509892, '8/2020', '', '0', 0, 0, 0, 0, 0, 0, 0, 0, '', '', 0, 'http://localhost/wowonder//post/105', 105, 0, 1, 0, 0, 0, 0, 0, 0, 1, '', 0, 0, '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -4397,7 +4394,7 @@ CREATE TABLE `wo_users` (
 --
 
 INSERT INTO `wo_users` (`user_id`, `username`, `email`, `password`, `first_name`, `last_name`, `avatar`, `cover`, `background_image`, `background_image_status`, `relationship_id`, `address`, `working`, `working_link`, `about`, `school`, `gender`, `birthday`, `country_id`, `website`, `facebook`, `google`, `twitter`, `linkedin`, `youtube`, `vk`, `instagram`, `language`, `email_code`, `src`, `ip_address`, `follow_privacy`, `friend_privacy`, `post_privacy`, `message_privacy`, `confirm_followers`, `show_activities_privacy`, `birth_privacy`, `visit_privacy`, `verified`, `lastseen`, `showlastseen`, `emailNotification`, `e_liked`, `e_wondered`, `e_shared`, `e_followed`, `e_commented`, `e_visited`, `e_liked_page`, `e_mentioned`, `e_joined_group`, `e_accepted`, `e_profile_wall_post`, `e_sentme_msg`, `e_last_notif`, `notification_settings`, `status`, `active`, `admin`, `type`, `registered`, `start_up`, `start_up_info`, `startup_follow`, `startup_image`, `last_email_sent`, `phone_number`, `sms_code`, `is_pro`, `pro_time`, `pro_type`, `joined`, `css_file`, `timezone`, `referrer`, `ref_user_id`, `balance`, `paypal_email`, `notifications_sound`, `order_posts_by`, `social_login`, `android_m_device_id`, `ios_m_device_id`, `android_n_device_id`, `ios_n_device_id`, `web_device_id`, `wallet`, `lat`, `lng`, `last_location_update`, `share_my_location`, `last_data_update`, `details`, `sidebar_data`, `last_avatar_mod`, `last_cover_mod`, `points`, `daily_points`, `point_day_expire`, `last_follow_id`, `share_my_data`, `last_login_data`, `two_factor`, `new_email`, `two_factor_verified`, `new_phone`, `info_file`, `city`, `state`, `zip`, `school_completed`, `weather_unit`, `paystack_ref`) VALUES
-(1, 'admin', 'b4irshad@gmail.com', '$2y$10$QQGzPysQchAdFtGqQ/IbpOh4h/IBaWPR4WgnwxRHrQYvlLxvqPwRa', '', '', 'upload/photos/d-avatar.jpg', 'upload/photos/d-cover.jpg', '', '0', 0, '', '', '', NULL, '', 'male', '0000-00-00', 1, '', '', '', '', '', '', '', '', 'english', 'fc25a41052ebf0433f563f27690c5fc1', 'Undefined', '::1', '0', '0', 'ifollow', '0', '0', '1', '0', '0', '1', 1598423295, '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '0', '0', '{\"e_liked\":1,\"e_shared\":1,\"e_wondered\":0,\"e_commented\":1,\"e_followed\":1,\"e_accepted\":1,\"e_mentioned\":1,\"e_joined_group\":1,\"e_liked_page\":1,\"e_visited\":1,\"e_profile_wall_post\":1,\"e_memory\":1}', '0', '1', '1', 'user', '00/0000', '1', '1', '1', '1', 0, '', 0, '0', 0, '0', 1592997590, '', '', 0, 0, '0', '', '0', '0', '0', '', '', '', '', '', '0.00', '33.6277313', '73.0759331', '1597322877', 1, 1598256884, '{\"post_count\":\"12\",\"album_count\":\"2\",\"following_count\":\"1\",\"followers_count\":\"1\",\"groups_count\":\"1\",\"likes_count\":\"0\",\"mutual_friends_count\":1}', '{\"following_data\":[\"5\"],\"followers_data\":[\"5\"],\"likes_data\":[],\"groups_data\":[\"1\"],\"mutual_friends_data\":[\"5\"]}', 0, 0, 0, 0, '', 0, 1, NULL, 0, '', 0, '', '', '', '', '', 0, 'us', ''),
+(1, 'admin', 'b4irshad@gmail.com', '$2y$10$QQGzPysQchAdFtGqQ/IbpOh4h/IBaWPR4WgnwxRHrQYvlLxvqPwRa', '', '', 'upload/photos/d-avatar.jpg', 'upload/photos/d-cover.jpg', '', '0', 0, '', '', '', NULL, '', 'male', '0000-00-00', 1, '', '', '', '', '', '', '', '', 'english', 'fc25a41052ebf0433f563f27690c5fc1', 'Undefined', '::1', '0', '0', 'ifollow', '0', '0', '1', '0', '0', '1', 1598511186, '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '0', '0', '{\"e_liked\":1,\"e_shared\":1,\"e_wondered\":0,\"e_commented\":1,\"e_followed\":1,\"e_accepted\":1,\"e_mentioned\":1,\"e_joined_group\":1,\"e_liked_page\":1,\"e_visited\":1,\"e_profile_wall_post\":1,\"e_memory\":1}', '0', '1', '1', 'user', '00/0000', '1', '1', '1', '1', 0, '', 0, '0', 0, '0', 1592997590, '', '', 0, 0, '0', '', '0', '0', '0', '', '', '', '', '', '0.00', '33.6277313', '73.0759331', '1597322877', 1, 1598508890, '{\"post_count\":\"22\",\"album_count\":\"1\",\"following_count\":\"1\",\"followers_count\":\"1\",\"groups_count\":\"1\",\"likes_count\":\"0\",\"mutual_friends_count\":1}', '{\"following_data\":[\"5\"],\"followers_data\":[\"5\"],\"likes_data\":[],\"groups_data\":[\"1\"],\"mutual_friends_data\":[\"5\"]}', 0, 0, 0, 0, '', 0, 1, NULL, 0, '', 0, '', '', '', '', '', 0, 'us', ''),
 (4, 'waseemibrar', 'b4irshad1@gmail.com', '$2y$10$ev3F78n.JYrAh6GtGiiIEONoPIyq/X5.QkCSE35OzlILmFvIkEFb.', 'waseem', 'ibrar', 'upload/photos/2020/08/knIvJos4LfMTKBJkcAef_10_c7bf7cddca2e88d30e54f9c03c504ce6_avatar.jpg', 'upload/photos/d-cover.jpg', '', '0', 0, '', '', '', NULL, '', 'male', '2006-12-05', 165, '', '', '', '', '', '', '', '', 'english', 'b86f3cdf74263e55ee096e73985e2787', 'site', '::1', '0', '0', 'ifollow', '0', '0', '1', '0', '0', '1', 1597236569, '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '0', '0', '{\"e_liked\":1,\"e_shared\":1,\"e_wondered\":0,\"e_commented\":1,\"e_followed\":1,\"e_accepted\":1,\"e_mentioned\":1,\"e_joined_group\":1,\"e_liked_page\":1,\"e_visited\":1,\"e_profile_wall_post\":1,\"e_memory\":1}', '0', '1', '0', 'user', '7/2020', '1', '1', '1', '1', 0, '', 0, '1', 1596792787, '4', 1595247667, '', '', 0, 0, '0', '', '1', '0', '0', '', '', '', '', '', '0.00', '33.6277313', '73.0759331', '1597381020', 1, 1597232447, '{\"post_count\":\"8\",\"album_count\":\"1\",\"following_count\":\"1\",\"followers_count\":\"1\",\"groups_count\":\"0\",\"likes_count\":\"0\",\"mutual_friends_count\":2}', '{\"following_data\":[\"5\"],\"followers_data\":[\"5\"],\"likes_data\":[],\"groups_data\":[],\"mutual_friends_data\":[\"5\",null]}', 1597036130, 0, 0, 0, '', 0, 1, NULL, 0, '', 0, '', '', '', '', '', 0, 'us', ''),
 (5, 'qasimiqbal', 'qasim@gmail.com', '$2y$10$b8RUzZFw..h7vLcXSfU6yOMdFWTxLZGZtRgSrsn/f3aKfNpIVEAwW', 'qasim', 'iqbal', 'upload/photos/d-avatar.jpg', 'upload/photos/d-cover.jpg', '', '0', 0, '', '', '', NULL, '', 'male', '2006-12-20', 165, '', '', '', '', '', '', '', '', 'english', '77c2538a9ce1a0078e2ba7bd49d40606', 'site', '::1', '0', '0', 'ifollow', '0', '0', '1', '0', '0', '0', 1597057917, '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '0', '0', '{\"e_liked\":1,\"e_shared\":1,\"e_wondered\":0,\"e_commented\":1,\"e_followed\":1,\"e_accepted\":1,\"e_mentioned\":1,\"e_joined_group\":1,\"e_liked_page\":1,\"e_visited\":1,\"e_profile_wall_post\":1,\"e_memory\":1}', '0', '1', '0', 'user', '8/2020', '1', '1', '1', '1', 0, '', 0, '0', 0, '0', 1596780648, '', '', 0, 0, '0', '', '0', '0', '0', '', '', '', '', '', '0.00', '33.63214100161348', '73.07234417203104', '1597385461', 1, 1596794101, '{\"post_count\":\"0\",\"album_count\":\"0\",\"following_count\":\"2\",\"followers_count\":\"2\",\"groups_count\":\"0\",\"likes_count\":\"0\",\"mutual_friends_count\":1}', '{\"following_data\":[\"4\",\"1\"],\"followers_data\":[\"4\",\"1\"],\"likes_data\":[],\"groups_data\":[],\"mutual_friends_data\":[\"5\"]}', 0, 0, 0, 0, '', 5, 1, NULL, 0, '', 0, '', '', '', '', '', 0, 'us', '');
 
@@ -5638,7 +5635,7 @@ ALTER TABLE `wo_agoravideocall`
 -- AUTO_INCREMENT for table `wo_albums_media`
 --
 ALTER TABLE `wo_albums_media`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `wo_announcement`
@@ -5662,7 +5659,7 @@ ALTER TABLE `wo_apps`
 -- AUTO_INCREMENT for table `wo_appssessions`
 --
 ALTER TABLE `wo_appssessions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `wo_apps_hash`
@@ -6112,7 +6109,7 @@ ALTER TABLE `wo_polls`
 -- AUTO_INCREMENT for table `wo_posts`
 --
 ALTER TABLE `wo_posts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
 
 --
 -- AUTO_INCREMENT for table `wo_products`
@@ -6232,7 +6229,7 @@ ALTER TABLE `wo_userfields`
 -- AUTO_INCREMENT for table `wo_users`
 --
 ALTER TABLE `wo_users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `wo_userschat`
