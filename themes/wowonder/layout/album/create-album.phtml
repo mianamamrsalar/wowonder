@@ -1,0 +1,109 @@
+<div class="page-margin">
+	<div class="row">
+		<div class="col-md-2 leftcol"><?php echo Wo_LoadPage("sidebar/left-sidebar"); ?></div>
+		<div class="col-md-7 middlecol">
+			<div class="page-margin wow_content mt-0">
+				<div class="wo_page_hdng pag_neg_padd pag_alone">
+					<div class="wo_page_hdng_innr">
+						<span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="M4,6H2V20A2,2 0 0,0 4,22H18V20H4M18,7H15V12.5A2.5,2.5 0 0,1 12.5,15A2.5,2.5 0 0,1 10,12.5A2.5,2.5 0 0,1 12.5,10C13.07,10 13.58,10.19 14,10.5V5H18M20,2H8A2,2 0 0,0 6,4V16A2,2 0 0,0 8,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2Z"></path></svg></span> <?php echo $wo['album']['title'];?>
+					</div>
+				</div>
+			</div>
+
+            <div class="page-margin wow_content wow_sett_content">
+				<form class="create-album-form form-horizontal" method="post">
+					<div class="wow_form_fields">
+						<label for="album_name"><?php echo $wo['lang']['album_name']; ?></label>
+						<input id="album_name" name="album_name" type="text" value="<?php echo $wo['album']['album_name'];?>">
+						<span class="help-block"><?php echo $wo['lang']['album_name_help'] ?></span>
+					</div>
+					<div class="wow_form_fields">
+						<label><?php echo $wo['lang']['songs'];?></label>
+						<div class="wow_fcov_image">
+							<div id="productsong-holder">
+								<input type="text" name="album-song" placeholder="Click Here for song upload">
+								<img src="<?php echo $wo['config']['theme_url'];?>/img/ad_pattern.png">
+							</div>
+							<div class="upload_ad_image" onclick="document.getElementById('publisher-songs').click(); return false">
+								<div class="upload_ad_image_content">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" ><path d="M15 4.582V12a3 3 0 1 1-2-2.83V2.05c5.053.501 9 4.765 9 9.95 0 5.523-4.477 10-10 10S2 17.523 2 12c0-5.185 3.947-9.449 9-9.95v2.012A8.001 8.001 0 0 0 12 20a8 8 0 0 0 3-15.418z" fill="currentColor"/></svg> <?php echo $wo['lang']['choose_songs'] ?>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="publisher-hidden-option">
+						<div id="progress">
+							<span id="percent">0%</span>
+							<div class="progress">
+								<div id="bar" class="progress-bar progress-bar-striped active"></div> 
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="hidden">
+						<input type="file" id="publisher-songs" accept="audio/mp3" name="postSongs">
+					</div>
+					<div class="app-general-alert setting-update-alert"></div>
+					<input type="hidden" name="id" class="form-control input-md" value="<?php echo $wo['album']['id'];?>">
+					<input type="hidden" name="hash_id" value="<?php echo Wo_CreateSession();?>">
+					<div class="text-center">
+						<a class="btn btn-mat" data-ajax="?link1=albums" href="<?php echo Wo_SeoLink('index.php?link1=albums');?>">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path></svg> <?php echo $wo['lang']['go_back'];?>
+						</a>
+						<button class="btn btn-main btn-mat btn-mat-raised add_wow_loader" type="submit"><?php echo $wo['lang']['publish']; ?></button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<?php echo Wo_LoadPage('sidebar/content');?>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#publisher-songs").on('change', function() {
+	//Get count of selected files
+	var filename = $(this).val().replace(/C:\\fakepath\\/i, '');
+	$("#productsong-holder input").val(filename);
+	
+	});
+});
+
+   $(function() {
+    var bar = $('#bar');
+    var percent = $('#percent');
+    var status = $('#status');
+    var publisher_button = $('#publisher-button');
+   
+     $('form.create-album-form').ajaxForm({
+       url: Wo_Ajax_Requests_File() + '?f=album&s=create_album',
+       beforeSend: function() {
+         var percentVal = '0%';
+         bar.width(percentVal);
+         percent.html(percentVal);
+         $('form.create-album-form').find('.add_wow_loader').addClass('btn-loading');
+   
+       },
+       uploadProgress: function (event, position, total, percentComplete) {
+           var percentVal = percentComplete + '%';
+           bar.width(percentVal);
+           $('#progress').slideDown(200);
+           if(percentComplete > 50) {
+             percent.addClass('white');
+           }
+           percent.html(percentVal);
+      },
+       success: function(data) {
+         if (data.status == 200) {
+           window.location.href = data.href;
+         } else {
+             var errors = data.errors.join("<br>");
+             $('.app-general-alert').html('<div class="alert alert-danger">' + errors + '</div>');
+             $('.alert-danger').fadeIn(300);
+         }
+         $('form.create-album-form').find('.add_wow_loader').removeClass('btn-loading');
+         $('#progress').slideUp(200);
+       }
+     });
+   });
+</script>

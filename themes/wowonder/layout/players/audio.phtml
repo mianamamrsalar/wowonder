@@ -1,0 +1,62 @@
+<img src="<?php  echo $wo['media']['video_thumb'];?>">
+<audio controls  style="width: 100%;background-color: #F1F3F4;">
+    <source src="<?php echo $wo['media']['filename'];?>" type="audio/mpeg">
+    <source src="<?php echo $wo['media']['filename'];?>" type="audio/mp3">
+</audio>
+<?php //echo $wo['media']['filename'];?>
+<!--<div id="audio-spectrum<?php /*echo $wo['media']['storyId'];*/?>"></div>
+
+ Create action buttons -->
+<!--<input type="button" id="btn-play<?php /*echo $wo['media']['storyId'];*/?>" value="Play" disabled="disabled"/>
+<input type="button" id="btn-pause<?php /*echo $wo['media']['storyId'];*/?>" value="Pause" disabled="disabled"/>
+<input type="button" id="btn-stop<?php /*echo $wo['media']['storyId'];*/?>" value="Stop" disabled="disabled" />-->
+<style>
+.mejs-container {
+	width: 100% !important;
+	margin-left: auto;
+    margin-right: auto;
+}
+</style>
+<!--<script>
+    var buttons = {
+            play: document.getElementById("btn-play<?php /*echo $wo['media']['storyId'];*/?>"),
+        pause: document.getElementById("btn-pause<?php /*echo $wo['media']['storyId'];*/?>"),
+        stop: document.getElementById("btn-stop<?php /*echo $wo['media']['storyId'];*/?>")
+    };
+
+    var Spectrum = WaveSurfer.create({
+        container: "#audio-spectrum<?php /*echo $wo['media']['storyId'];*/?>",
+        progressColor: "#03a9f4"
+    });
+
+    buttons.play.addEventListener("click", function(){
+        Spectrum.play();
+
+        buttons.stop.disabled = false;
+        buttons.pause.disabled = false;
+        buttons.play.disabled = true;
+    }, false);
+
+    buttons.pause.addEventListener("click", function(){
+        Spectrum.pause();
+
+        buttons.pause.disabled = true;
+        buttons.play.disabled = false;
+    }, false);
+
+
+    buttons.stop.addEventListener("click", function(){
+        Spectrum.stop();
+
+        buttons.pause.disabled = true;
+        buttons.play.disabled = false;
+        buttons.stop.disabled = true;
+    }, false);
+
+
+    Spectrum.on('ready', function () {
+        buttons.play.disabled = false;
+    });
+
+    Spectrum.load("<?php /*echo $wo['media']['filename'];*/?>");
+    </script>-->
